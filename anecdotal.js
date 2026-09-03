@@ -2,7 +2,7 @@ const express = require('express');
 const { v4: uuid } = require('uuid');
 const db = require('./connection');
 const { authRequired, subscriptionActive } = require('../middleware/auth');
-const { classAccessRequired } = require('../middleware/classAccess');
+const { classAccessRequired } = require('./classAccess');
 
 const router = express.Router();
 router.use(authRequired, subscriptionActive);
