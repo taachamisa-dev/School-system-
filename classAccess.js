@@ -1,4 +1,4 @@
-const db = require('../db/connection');
+const db = require('./connection');
 
 // Ensures a teacher can only touch records belonging to a class they teach.
 // Admins pass through freely. Expects req.params.classId or req.body.class_id.
