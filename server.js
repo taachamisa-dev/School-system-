@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 
-require('./db/connection'); // applies schema on boot
+require('./connection'); // applies schema on boot
 
 const app = express();
 app.use(cors());
