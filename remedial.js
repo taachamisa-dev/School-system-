@@ -1,6 +1,6 @@
 const express = require('express');
 const { v4: uuid } = require('uuid');
-const db = require('../db/connection');
+const db = require('./connection');
 const { authRequired, subscriptionActive } = require('../middleware/auth');
 const { classAccessRequired } = require('../middleware/classAccess');
 
