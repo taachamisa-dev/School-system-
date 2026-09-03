@@ -1,7 +1,7 @@
 const express = require('express');
 const { v4: uuid } = require('uuid');
 const db = require('./connection');
-const { authRequired, subscriptionActive } = require('../middleware/auth');
+const { authRequired, subscriptionActive } = require('./auth');
 const { classAccessRequired } = require('../middleware/classAccess');
 
 const router = express.Router();
